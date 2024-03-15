@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: gainsboro;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.titulo{
+    font-size: 2em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link-underline{
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.cart{
+    padding-left: 20px;
+}
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    gap: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+.card-body button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.card img{
+    padding-bottom: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+}
