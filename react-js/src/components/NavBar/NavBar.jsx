@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useCartContext } from "../../Context/CartContext"
+import  './NavBar.css'
 
 
 const NavBar = () => {

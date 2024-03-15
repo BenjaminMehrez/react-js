@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link-underline{
+    font-weight: 600;
+    text-decoration: underline;
+
+}

@@ -1,6 +1,8 @@
 import { memo } from "react";
 import { Link } from "react-router-dom"
 
+import './Item.css'
+
 const Item = memo(({ product }) => {
 
         return (
