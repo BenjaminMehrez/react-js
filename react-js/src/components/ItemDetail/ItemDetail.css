@@ -1,0 +1,16 @@
+.card-body-detail{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid gray;
+    gap: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+
+.card-submit button{
+    padding: 10px;
+    margin: 7px;
+}

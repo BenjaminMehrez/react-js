@@ -1,0 +1,35 @@
+.footer{
+    background-color: gainsboro;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    padding-top: 15px;
+}
+
+.suscribcion p{
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.suscribcion form input{
+    background-color: gainsboro;
+    width: 280px;
+    height: 38px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.submit{
+    padding: 12px;
+    border-radius: 10px;
+    width: 70px;
+    cursor: pointer;
+
+}
+
+.by{
+    margin-top: 170px;
+}

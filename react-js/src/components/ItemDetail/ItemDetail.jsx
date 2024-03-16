@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
 import { useCartContext } from "../../Context/CartContext";
-import Intercambialidad from "../Intercambialidad/Intercambialidad";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
+
+import './ItemDetail.css'
+import { useState } from "react";
 
 const ItemDetail = ({ product }) => {
 
@@ -17,12 +18,12 @@ const ItemDetail = ({ product }) => {
     }
 
     return (
-        <div className="card-body">
+        <div className="card-body-detail">
             <img src={product.img} alt="img" />
             <label>Nombre: {product.name}</label>
             <label>Price: {product.price}</label>
             <label>Stock: {product.stock}</label>
-            <div>
+            <div className="card-submit">
                 {/* <Intercambialidad/> */}
                 {tieneCantidad ?
                     <>

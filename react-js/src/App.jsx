@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 import './App.css'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
                         <Route path='/cart' element={<CartWidget />} />
                     </Routes>
+                    <Footer/>
 
                 </>
             </CartContextProvider>
