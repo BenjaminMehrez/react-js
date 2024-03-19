@@ -22,7 +22,7 @@ const Footer = () => {
                         <p>contacto@infoadidas.com</p>
                     </div>
                     <div className='by'>
-                        <p>HECHO POR Bemjamin Mehrez.J</p>
+                        <p>&copy;Benjamin Mehrez</p>
                     </div>
 
                 </div>

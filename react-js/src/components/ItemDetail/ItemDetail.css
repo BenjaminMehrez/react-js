@@ -1,16 +1,104 @@
 .card-body-detail{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    border: 1px solid gray;
-    gap: 5px;
-    padding-bottom: 10px;
+    width: 300px;
+    height: 525px;
     border-radius: 20px;
-    margin-bottom: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-detail{
+    padding-bottom: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body-detail:hover{
+    border: 1px solid gray;
+}
+
+.numero{
+    font-size: 1.2em;
 }
 
 
-.card-submit button{
-    padding: 10px;
-    margin: 7px;
+.mas{
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    margin-right: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid gray;
 }
+
+.contador{
+    margin-top: 20px;
+}
+
+.menos{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 4px;
+}
+
+.agregar{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 75px;
+    border: 1px solid gray;
+    cursor: pointer;
+    height: 35px;
+}
+
+.agregar:hover{
+    color: white;
+    background-color: gray;
+}
+
+.menos:hover{
+    color: white;
+    background-color: gray;
+}
+
+.mas:hover{
+    color: white;
+    background-color: gray;
+}
+
+.card-submit-detail{
+    margin-top: 10px; 
+}
+
+.terminar{
+    width: 170px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+    margin-block: 20px;
+}
+
+.terminar:hover{
+    color: white;
+    background-color: gray;
+}
+
+.comprando{
+    width: 170px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.comprando:hover{
+    color: white;
+    background-color: gray;
+}
+

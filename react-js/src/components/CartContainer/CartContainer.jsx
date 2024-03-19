@@ -1,6 +1,9 @@
-import { addDoc, collection, doc, getFirestore, updateDoc, writeBatch } from 'firebase/firestore'
-import { useCartContext } from "../../Context/CartContext"
 import { useState } from 'react'
+import { addDoc, collection, getFirestore } from 'firebase/firestore'
+
+import { useCartContext } from "../../Context/CartContext"
+
+import './CartContainer.css'
 
 const CartContainer = () => {
 
@@ -11,10 +14,12 @@ const CartContainer = () => {
     })
 
     const { cartList, vaciarCarrito, precioTotal, eliminarItem, eliminarCantidad } = useCartContext()
+    const [ comprado, setComprado ] = useState(true)
 
     const handleComprar = (e) => {
 
         e.preventDefault()
+        setComprado(false)
 
         const orden = {
             buyer: formData,
@@ -29,7 +34,6 @@ const CartContainer = () => {
             .then(resp => console.log(resp))
             .catch(err => console.log(err))
             .finally(() =>
-                console.log('compra terminada'),
                 vaciarCarrito()
             )
     }
@@ -42,58 +46,70 @@ const CartContainer = () => {
     }
 
     return (
-        cartList.length === 0 ?
+        comprado ? (
 
-            <h2>No hay productos en el carrito</h2>
+            cartList.length === 0 ?
 
-            :
-            <div>
-                <div className="card container">
-                    {cartList.map(product => (
-                        <div className="card-body" key={product.id}>
-                            <img src={product.img} alt="img" />
-                            <label>Nombre: {product.name}</label>
-                            <label>Price: ${product.price}</label>
-                            <label>Cantidad: {product.quantity}</label>
-                            <button onClick={() => eliminarItem(product.id)}>Quitar -1</button>
-                            <button onClick={() => eliminarCantidad(product.id)}>Eliminar Producto</button>
-                        </div>
-                    ))}
+                <h2 className='product-cart'>No hay productos en el carrito</h2>
+
+                :
+                <div className='cart'>
+
+                    <div className="cart-card container">
+                        {cartList.map(product => (
+                            <div className="card-body-cart" key={product.id}>
+                                <img className='img-cart' src={product.img} alt="img" />
+                                <label>Nombre: {product.name}</label>
+                                <label>Price: ${product.price}</label>
+                                <label>Cantidad: {product.quantity}</label>
+                                <button className='restar' onClick={() => eliminarItem(product.id)}>Quitar -1</button>
+                                <button className='eliminar' onClick={() => eliminarCantidad(product.id)}>Eliminar Producto</button>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className='cart-form container'>
+                        <h3>Precio Total: ${precioTotal()}</h3>
+                        <h3>Cliente:</h3>
+                        <form className='form' >
+                            <input
+                                className='cart-form-nombre'
+                                type="text"
+                                name='name'
+                                placeholder='Nombre'
+                                value={formData.name}
+                                onChange={handleForm}
+                            />
+                            <input
+                                className='cart-form-email'
+                                type="text"
+                                name='email'
+                                placeholder='Email'
+                                value={formData.email}
+                                onChange={handleForm}
+                            />
+                            <input
+                                className='cart-form-phone'
+                                type="text"
+                                name='phone'
+                                placeholder='Telefono'
+                                value={formData.phone}
+                                onChange={handleForm}
+                            />
+                            <button className='cart-form-comprar' onClick={handleComprar}>Comprar</button>
+                            <button className='cart-form-vaciar' onClick={vaciarCarrito}>Vaciar carrito</button>
+                        </form >
+                    </div>
+
                 </div>
-                <div className='container'>
-                    <h3>Precio Total: ${precioTotal()}</h3>
-                    <button onClick={vaciarCarrito}>Vaciar carrito</button>
-                    <form>
-                        <input
-                            type="text"
-                            name='name'
-                            placeholder='Nombre'
-                            onChange={handleForm}
-                            value={formData.name}
-                        />
-                        <input
-                            type="text"
-                            name='email'
-                            placeholder='Email'
-                            onChange={handleForm}
-                            value={formData.email}
-                        />
-                        <input
-                            type="text"
-                            name='phone'
-                            placeholder='Telefono'
-                            onChange={handleForm}
-                            value={formData.phone}
-                        />
-                    </form>
-                    <button onClick={handleComprar}>Comprar</button>
-                </div>
-            </div>
+        ) :
+            <h2 className='gracias'>GRACIAS POR SU COMPRA!!</h2>
+
+
     )
 }
 
 export default CartContainer
-
 
 
 

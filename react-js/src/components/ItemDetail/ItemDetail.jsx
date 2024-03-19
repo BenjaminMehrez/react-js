@@ -19,16 +19,17 @@ const ItemDetail = ({ product }) => {
 
     return (
         <div className="card-body-detail">
-            <img src={product.img} alt="img" />
+            <img className="img-detail" src={product.img} alt="img" />
             <label>Nombre: {product.name}</label>
             <label>Price: {product.price}</label>
             <label>Stock: {product.stock}</label>
-            <div className="card-submit">
+            <div className="card-submit-detail">
                 {/* <Intercambialidad/> */}
                 {tieneCantidad ?
                     <>
-                        <Link to='/cart'><button>Terminar Compra</button></Link>
-                        <Link to='/'><button>Seguir Comprando</button></Link>
+                        <Link to='/cart'><button  className="terminar">Terminar Compra</button></Link>
+                        <br />
+                        <Link to='/'><button className="comprando">Seguir Comprando</button></Link>
                     </>
 
                     :

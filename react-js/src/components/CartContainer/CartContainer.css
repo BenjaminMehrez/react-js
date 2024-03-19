@@ -1,0 +1,161 @@
+.cart {
+    display: flex;
+    margin-left: 170px;
+    width: 1500px;
+    margin-bottom: 200px;
+}
+
+.cart-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 700px;
+    width: 700px;
+    overflow: auto;
+}
+
+.card-body-cart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 525px;
+    margin: 10px;
+    gap: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-body-cart:hover{
+    border: 1px solid gray;
+}
+
+.restar{
+    margin: auto;
+    margin-top: 19px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.restar:hover{
+    color: white;
+    background-color: gray;
+}
+
+.eliminar{
+    margin: auto;
+    margin-block: 1px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.eliminar:hover{
+    color: white;
+    background-color: gray;
+}
+
+.img-cart{
+    padding-bottom: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+                               /* FORMULARIO */
+                               
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 24px;
+    padding-top: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.cart-form h3 {
+    text-decoration: underline;
+}
+
+.cart-form-nombre {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-block: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+.cart-form-email {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 250px;
+}
+
+.cart-form-phone {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 250px;
+}
+
+.cart-form-comprar {
+    border-radius: 20px;
+    border: 1px solid gray;
+    height: 40px;
+    margin-left: 120px;
+    background-color: white;
+    margin-bottom: 30px;
+    width: 200px;
+}
+
+.cart-form-comprar:hover{
+    background-color: gray;
+    color: white;
+
+}
+
+.cart-form-vaciar {
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    height: 40px;
+    margin-left: 120px;
+    width: 200px;
+}
+
+.cart-form-vaciar:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+/* NO HAY PRODUCTOS */
+
+.product-cart {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.gracias{
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}

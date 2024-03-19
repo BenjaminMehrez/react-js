@@ -7,12 +7,12 @@ const Item = memo(({ product }) => {
 
         return (
             <div className="card-body">
-                <img src={product.img} alt="img" />
+                <img className="img-item" src={product.img} alt="img" />
                 <label>{product.name}</label>
                 <label>Price: ${product.price}</label>
                 <label>Stock: {product.stock}</label>
-                <Link to={`/detail/${product.id}`}>
-                    <button className="card-submit">Detalle</button>
+                <Link className="card-submit" to={`/detail/${product.id}`}>
+                    Detalle
                 </Link>
             </div>
         )
