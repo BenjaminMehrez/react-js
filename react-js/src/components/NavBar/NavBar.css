@@ -11,9 +11,11 @@
 
 .nav-link {
     font-weight: 600;
+    font-size: large;
 }
 
 .nav-link-underline{
+    font-size: large;
     font-weight: 600;
     text-decoration: underline;
 

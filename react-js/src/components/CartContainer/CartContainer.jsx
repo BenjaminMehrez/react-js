@@ -53,9 +53,9 @@ const CartContainer = () => {
                 <h2 className='product-cart'>No hay productos en el carrito</h2>
 
                 :
-                <div className='cart'>
+                <div className='cart-container'>
 
-                    <div className="cart-card container">
+                    <div className="cart-card">
                         {cartList.map(product => (
                             <div className="card-body-cart" key={product.id}>
                                 <img className='img-cart' src={product.img} alt="img" />
@@ -68,7 +68,7 @@ const CartContainer = () => {
                         ))}
                     </div>
 
-                    <div className='cart-form container'>
+                    <div className='cart-form'>
                         <h3>Precio Total: ${precioTotal()}</h3>
                         <h3>Cliente:</h3>
                         <form className='form' >

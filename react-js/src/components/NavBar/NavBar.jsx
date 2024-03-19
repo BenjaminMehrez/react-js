@@ -16,7 +16,7 @@ const NavBar = () => {
                     </NavLink>
                     <NavLink to='/' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Inicio</NavLink>
                     <NavLink to='/categoria/remeras' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Remeras</NavLink>
-                    <NavLink to='/categoria/zapatillas' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Zapatilla</NavLink>
+                    <NavLink to='/categoria/zapatillas' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Zapatillas</NavLink>
                     <NavLink to='/categoria/camperas' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Camperas</NavLink>
                     <NavLink to='/categoria/conjuntos' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Conjuntos</NavLink>
                     <NavLink to='/cart' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>{cantidadTotal() > 0 && cantidadTotal()}🛒</NavLink>
