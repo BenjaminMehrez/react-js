@@ -69,8 +69,8 @@ const CartContainer = () => {
                     </div>
 
                     <div className='cart-form'>
-                        <h3>Precio Total: ${precioTotal()}</h3>
-                        <h3>Cliente:</h3>
+                        <h3 className='precio-total'>Precio Total: ${precioTotal()}</h3>
+                        <h3 className='cliente'>Cliente:</h3>
                         <form className='form' >
                             <input
                                 className='cart-form-nombre'

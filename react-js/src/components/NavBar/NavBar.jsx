@@ -11,8 +11,8 @@ const NavBar = () => {
         <>
             <header className="header">
                 <nav className="nav container">
-                    <NavLink to="" className="logo">
-                        <h2 className="titulo">Adidas</h2>
+                    <NavLink to="./">
+                        <img src="../../../public/assets/adidas.png" alt="" className="logo"/>
                     </NavLink>
                     <NavLink to='/' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Inicio</NavLink>
                     <NavLink to='/categoria/remeras' className={({ isActive }) => isActive ? 'nav-link-underline' : 'nav-link'}>Remeras</NavLink>

@@ -20,9 +20,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 300px;
-    height: 525px;
+    width: 320px;
+    height: 520px;
     margin: 10px;
+    margin-bottom: 25px;
     gap: 5px;
     padding-bottom: 10px;
     border-radius: 20px;
@@ -35,12 +36,11 @@
 
 .restar{
     margin: auto;
-    margin-top: 19px;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 30px;
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     background-color: white;
     cursor: pointer;
 }
@@ -52,13 +52,12 @@
 
 .eliminar{
     margin: auto;
-    margin-block: 1px;
-    margin-bottom: 20px;
     width: 150px;
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     background-color: white;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
@@ -89,8 +88,18 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.cart-form h3 {
-    text-decoration: underline;
+.precio-total{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+}
+
+.cliente{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
 }
 
 .cart-form-nombre {
@@ -120,34 +129,36 @@
 
 .cart-form-comprar {
     border-radius: 20px;
-    border: 1px solid gray;
+    background-color: gray;
+    color: white;
     height: 40px;
-    margin-left: 120px;
-    background-color: white;
-    margin-bottom: 30px;
     width: 200px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    border: solid grey;
+    cursor: pointer;
 }
 
 .cart-form-comprar:hover{
-    background-color: gray;
-    color: white;
-
+    background-color: white;
+    color: black;
 }
 
 .cart-form-vaciar {
     border-radius: 20px;
-    border: 1px solid gray;
-    background-color: white;
-    height: 40px;
+    background-color: gray;
+    color: white;
     margin-left: 120px;
+    height: 40px;
     width: 200px;
+    border: solid grey;
+    cursor: pointer;
 }
 
 .cart-form-vaciar:hover{
-    background-color: gray;
-    color: white;
+    color: black;
+    background-color: white;
 }
-
 
 /* NO HAY PRODUCTOS */
 

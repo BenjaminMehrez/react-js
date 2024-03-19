@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 525px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -14,7 +14,7 @@
 }
 
 .card-body-detail:hover{
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 
 .numero{
@@ -29,7 +29,7 @@
     margin-right: 4px;
     border-radius: 20px;
     cursor: pointer;
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 
 .contador{
@@ -40,7 +40,7 @@
     width: 50px;
     height: 30px;
     cursor: pointer;
-    border: 1px solid gray;
+    border: 2px solid gray;
     border-radius: 20px;
     background-color: white;
     margin-left: 4px;
@@ -49,9 +49,9 @@
 .agregar{
     background-color: white;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 75px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     cursor: pointer;
     height: 35px;
 }
@@ -78,7 +78,8 @@
 .terminar{
     width: 170px;
     height: 40px;
-    border: 1px solid gray;
+    font-size: 15px;
+    border: 2px solid gray;
     border-radius: 20px;
     background-color: white;
     margin-block: 20px;
@@ -92,7 +93,8 @@
 .comprando{
     width: 170px;
     height: 40px;
-    border: 1px solid gray;
+    font-size: 15px;
+    border: 2px solid gray;
     border-radius: 20px;
     background-color: white;
 }

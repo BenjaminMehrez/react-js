@@ -12,7 +12,7 @@ const Item = memo(({ product }) => {
                 <label>Price: ${product.price}</label>
                 <label>Stock: {product.stock}</label>
                 <Link className="card-submit" to={`/detail/${product.id}`}>
-                    Detalle
+                    Info
                 </Link>
             </div>
         )

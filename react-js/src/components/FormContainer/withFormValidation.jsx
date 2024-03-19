@@ -10,12 +10,16 @@ export const withFormValidation = (WrappedComponent) => {
             let newErrors = {}
             let isValid = true
 
-            if (!props.formData.nombre) {
+            if (!props.formData.name) {
                 newErrors.nombre = 'El nombre es obligatorio'
                 isValid = false
             }
             if (!props.formData.email) {
                 newErrors.email = 'El mail es obligatorio'
+                isValid = false
+            }
+            if (!props.formData.phone) {
+                newErrors.phone = 'El telefono es obligatorio'
                 isValid = false
             }
             setError(newErrors)

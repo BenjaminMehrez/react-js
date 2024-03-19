@@ -3,15 +3,16 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    gap: 20px;
-    border-radius: 20px;
     padding-bottom: 120px;
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    text-align: center;
+    width: 275px;
+    height: 440px;
+    margin: 20px;
     gap: 5px;
     padding-bottom: 10px;
     border-radius: 20px;
@@ -19,12 +20,12 @@
 }
 
 .card-body:hover{
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 
 .card-submit{
     width: 150px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     padding: 10px;
     margin: auto;
     margin-block: 10px;
@@ -42,5 +43,5 @@
     padding-bottom: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 275px;
+    width: auto;
 }
