@@ -1,36 +1,91 @@
-.footer{
-    background-color: gainsboro;
+.footer {
+    background-color: gainsboro;  
 }
 
-.container-footer{
+.container-footer {
     display: flex;
-    justify-content: space-around;
-    height: 250px;
-    padding-top: 15px;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
 }
 
-.suscribcion p{
-    margin-bottom: 25px;
-    font-size: 1.1em;
+.suscribete {
+    width: 300px;
+    font-size: large;
 }
 
-.suscribcion form input{
-    background-color: gainsboro;
-    width: 280px;
-    height: 38px;
+
+.email {
+    width: 250px;
+    height: 40px;
+    border: 2px solid gray;
+    padding-left: 10px;
     border-radius: 10px;
-    margin-bottom: 18px;
-    padding-left: 7px;
 }
 
-.submit{
-    padding: 12px;
+.submit {
+    width: 100px;
+    height: 40px;
+    border: 2px solid gray;
     border-radius: 10px;
-    width: 70px;
+    margin-top: 20px;
     cursor: pointer;
-
+    background-color: white;
 }
 
-.by{
-    margin-top: 170px;
+.submit:hover {
+    background-color: gray;
+    color: white;
+}
+
+.adidas {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.contacto {
+    font-size: 18px;
+    margin: 0;
+}
+
+.creador {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 1024px) {
+
+    .footer{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 1600px;
+        height: 250px;
+        
+    }
+
+    .submit:hover {
+        background-color: gray;
+        color: white;
+    }
+    
+    .contacto {
+        margin: auto;
+        margin-left: 400px;
+
+    }
+
+    .crador{
+        margin: auto;
+
+    }
+
+
 }

@@ -14,7 +14,7 @@ const CartContainer = () => {
     })
 
     const { cartList, vaciarCarrito, precioTotal, eliminarItem, eliminarCantidad } = useCartContext()
-    const [ comprado, setComprado ] = useState(true)
+    const [comprado, setComprado] = useState(true)
 
     const handleComprar = (e) => {
 
@@ -96,9 +96,11 @@ const CartContainer = () => {
                                 value={formData.phone}
                                 onChange={handleForm}
                             />
+                        </form >
+                        <div className='form-compra'>
                             <button className='cart-form-comprar' onClick={handleComprar}>Comprar</button>
                             <button className='cart-form-vaciar' onClick={vaciarCarrito}>Vaciar carrito</button>
-                        </form >
+                        </div>
                     </div>
 
                 </div>
