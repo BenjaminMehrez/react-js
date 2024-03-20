@@ -21,11 +21,11 @@ function Menu() {
             </button>
             <nav className={showMenu ? 'menu active' : 'menu'}>
                 <ul>
-                    <li><Link to='/'>Inicio</Link></li>
-                    <li><Link to='/categoria/remeras'>Remeras</Link></li>
-                    <li><Link to='/categoria/zapatillas'>Zapatillas</Link></li>
-                    <li><Link to='/categoria/camperas'>Camperas</Link></li>
-                    <li><Link to='/categoria/conjuntos'>Conjuntos</Link></li>
+                    <li><a href='/'>Inicio</a></li>
+                    <li><a href='/categoria/remeras'>Remeras</a></li>
+                    <li><a href='/categoria/zapatillas'>Zapatillas</a></li>
+                    <li><a href='/categoria/camperas'>Camperas</a></li>
+                    <li><a href='/categoria/conjuntos'>Conjuntos</a></li>
                 </ul>
             </nav>
         </div>
