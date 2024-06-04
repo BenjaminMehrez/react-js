@@ -21,6 +21,7 @@
     border: 2px solid gray;
     padding-left: 10px;
     border-radius: 10px;
+    outline: none;
 }
 
 .submit {
